@@ -1,0 +1,10 @@
+/home/carlos/ros_projects/rosbot_ws/src/rosbot_navigation/build/CMakeFiles/uninstall.dir
+/home/carlos/ros_projects/rosbot_ws/src/rosbot_navigation/build/CMakeFiles/rosbot_navigation_uninstall.dir
+/home/carlos/ros_projects/rosbot_ws/src/rosbot_navigation/build/CMakeFiles/odometry_robot.dir
+/home/carlos/ros_projects/rosbot_ws/src/rosbot_navigation/build/CMakeFiles/test.dir
+/home/carlos/ros_projects/rosbot_ws/src/rosbot_navigation/build/CMakeFiles/edit_cache.dir
+/home/carlos/ros_projects/rosbot_ws/src/rosbot_navigation/build/CMakeFiles/rebuild_cache.dir
+/home/carlos/ros_projects/rosbot_ws/src/rosbot_navigation/build/CMakeFiles/list_install_components.dir
+/home/carlos/ros_projects/rosbot_ws/src/rosbot_navigation/build/CMakeFiles/install.dir
+/home/carlos/ros_projects/rosbot_ws/src/rosbot_navigation/build/CMakeFiles/install/local.dir
+/home/carlos/ros_projects/rosbot_ws/src/rosbot_navigation/build/CMakeFiles/install/strip.dir

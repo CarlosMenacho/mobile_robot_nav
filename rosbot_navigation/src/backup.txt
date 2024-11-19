@@ -1,0 +1,46 @@
+#include "rclcpp/rclcpp.hpp"
+#include "std_msgs/msg/string.hpp"
+
+
+// class odometry_robot
+// {
+
+// public:
+//     odometry_robot(/* args */);
+//     void spin();
+
+// private:
+//     rclcpp::Node::SharedPtr node;
+
+// };
+
+// odometry_robot::odometry_robot(/* args */)
+// {
+// }
+
+
+void callback(const std_msgs::msg::String::SharedPtr msg)
+{
+  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "I heard: '%s'", msg->data.c_str());
+}
+
+int main(int argc, char * argv[])
+{
+    rclcpp::init(argc, argv);
+
+    rclcpp::Node::SharedPtr node = std::make_shared<rclcpp::Node>("minimal_subscriber");
+    auto subscription = node->create_subscription<std_msgs::msg::String>(
+    "topic", 10, callback);
+
+    while(rclcpp::ok()){
+        rclcpp::Time last_time = node->now();
+        rclcpp::spin_some(node);
+        rclcpp::Time current_time = node->now();
+
+        auto elapsed_time = current_time - last_time;
+        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Elapsed time: %f", elapsed_time.seconds());
+    }
+    rclcpp::shutdown();
+    return 0;
+}
+
